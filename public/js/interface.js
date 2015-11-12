@@ -2,6 +2,16 @@
 $(document).ready(function() {
   var thermostat = new Thermostat();
   updateTemp();
+  var location;
+  var temperature;
+
+  var weather = $.getJSON('http://api.wunderground.com/api/831aa92990911190/conditions/q/CA/San_Francisco.json', function(data) {
+      temperature = data.current_observation.temp_c;
+  });
+
+  $('#update-weather').click( function() {
+     $('#weather-content').text(temperature);
+  });
 
   $('#power_saving_mode_on').css('background-color', 'green');
   $('#power_saving_mode_off').css('background-color', 'white').fadeTo("slow", 0.15);
