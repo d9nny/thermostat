@@ -1,0 +1,16 @@
+html {
+  background: linear-gradient(#00CCFF, #0099FF) no-repeat fixed;
+}
+
+body {
+  text-align: center;
+}
+
+#temperature {
+  font-family: Impact;
+  font-size: 30px;
+}
+
+#controls {
+  display: inline-block;
+}
