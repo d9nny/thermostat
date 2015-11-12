@@ -35,13 +35,7 @@ $(document).ready(function() {
 
   function updateTemp() {
     $('#temperature').text(thermostat.temperature());
-    if (thermostat.energyConsumption() === 'Low energy consumption') {
-      $('#temperature').css('color', 'green');
-    } else if (thermostat.energyConsumption() === 'Medium energy consumption') {
-      $('#temperature').css('color', 'black');
-    } else {
-      $('#temperature').css('color', 'red');
-    };
+    $('#temperature').attr('class', thermostat.energyConsumption());
   };
 });
 

@@ -8,9 +8,9 @@ function Thermostat() {
 }
 
 Thermostat.prototype.energyConsumption = function() {
-	if (this.temp <= this.midTemp) {return "Low energy consumption"};
-	if (this.temp > this.midTemp && this.temp < this.psMaxTemp) {return "Medium energy consumption"};
-	return "High energy consumption";
+	if (this.temp <= this.midTemp) {return "low-usage"};
+	if (this.temp > this.midTemp && this.temp < this.psMaxTemp) {return "medium-usage"};
+	return "high-usage";
 };
 
 Thermostat.prototype.temperature = function() {
