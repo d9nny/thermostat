@@ -1,0 +1,28 @@
+html {
+  background: linear-gradient(#00CCFF, #0099FF) no-repeat fixed;
+}
+
+body {
+  text-align: center;
+}
+
+#temperature {
+  font-family: Impact;
+  font-size: 30px;
+}
+
+#controls {
+  list-style-type:none;
+}
+
+.low-usage {
+  color: green;
+}
+
+.medium-usage {
+  color: black;
+}
+
+.high-usage {
+  color: red;
+}
