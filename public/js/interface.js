@@ -6,11 +6,7 @@ $(document).ready(function() {
   var temperature;
 
   var weather = $.getJSON('http://api.wunderground.com/api/831aa92990911190/conditions/q/CA/San_Francisco.json', function(data) {
-      temperature = data.current_observation.temp_c;
-  });
-
-  $('#update-weather').click( function() {
-     $('#weather-content').text(temperature);
+      updateWeather(data.current_observation.temp_c);
   });
 
   $('#power_saving_mode_on').css('background-color', 'green');
@@ -46,6 +42,10 @@ $(document).ready(function() {
   function updateTemp() {
     $('#temperature').text(thermostat.temperature());
     $('#temperature').attr('class', thermostat.energyConsumption());
+  };
+
+  function updateWeather(temperature) {
+     $('#weather-content').text(temperature);
   };
 });
 
