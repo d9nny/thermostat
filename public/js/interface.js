@@ -13,7 +13,7 @@ $(document).ready(function() {
   city = data.location.city;
   url = 'http://api.wunderground.com/api/831aa92990911190/conditions/q/' + country + '/' + city + '.json';
     $.getJSON(url, function(data) {
-      updateWeather(data.current_observation.temp_c);
+      updateWeather(data.current_observation.temp_c,city);
     });
   });
 
@@ -54,8 +54,9 @@ $(document).ready(function() {
     $('#temperature').attr('class', thermostat.energyConsumption());
   };
 
-  function updateWeather(temperature) {
-     $('#weather-content').text(temperature);
+  function updateWeather(temperature, city) {
+     $('#weather').text(temperature);
+     $('#city').text(city);
   };
 });
 
