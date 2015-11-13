@@ -2,17 +2,41 @@ html {
   background: linear-gradient(#00CCFF, #0099FF) no-repeat fixed;
 }
 
-body {
+header {
+  font-size: 38px;
+  font-family: "Helvetica neue", Arial, sans-serif;
+  font-weight: 700;
+  text-shadow: 2px 2px #2B585A;
+  color: #CAE8FF;
+  background-color: #4580b0;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 }
 
-#temperature {
+body {
+  margin: 0 auto;
+}
+
+main {
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+g
+section > h1 {
   font-family: Impact;
   font-size: 30px;
+  font-family: Impact;
+  font-size: 48px;
+  font-weight: 700;
+  text-shadow: 2px 2px #2B585A;
 }
 
 #controls {
   list-style-type:none;
+  padding: 0;
 }
 
 .low-usage {
