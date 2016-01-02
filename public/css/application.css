@@ -10,9 +10,10 @@ header {
   color: #CAE8FF;
   background-color: #4580b0;
   margin: 0 auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  letter-spacing: 2px;
 }
 
 body {
@@ -34,9 +35,45 @@ section > h1 {
   text-shadow: 2px 2px #2B585A;
 }
 
+li {
+  padding: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(202, 232, 255);
+  opacity: 1;
+  letter-spacing: 1px;
+
+}
+
+h1 {
+  font-size: 81px;
+  margin: 25px;
+}
+
+p, article {
+  color: #CAE8FF;
+  font-size: 20px;
+  font-family: initial;
+  letter-spacing: 2px;
+}
+
+button {
+  padding: 15px;
+  font-size: 12px;
+  color: #103E63;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+p { 
+  font-size: 18px;
+}
+
 #controls {
   list-style-type:none;
   padding: 0;
+  min-width: 200px;
 }
 
 .low-usage {
@@ -44,7 +81,7 @@ section > h1 {
 }
 
 .medium-usage {
-  color: black;
+  color: #CAE8FF;
 }
 
 .high-usage {
